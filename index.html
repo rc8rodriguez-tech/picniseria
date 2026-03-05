@@ -1,21 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Picniseria | Picnic romántico en Barranco</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#f5f5f5;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
+
+body{
+background:#fff;
+color:#333;
+}
+
+/* HERO */
 
 .hero{
 height:100vh;
-background:url("https://images.unsplash.com/photo-1523438885200-e635ba2c371e") center/cover;
+background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -25,66 +41,110 @@ color:white;
 
 .hero h1{
 font-size:60px;
-margin-bottom:10px;
+margin-bottom:20px;
 }
 
 .hero p{
 font-size:22px;
+max-width:600px;
+margin:auto;
 }
 
 .btn{
+display:inline-block;
+margin-top:30px;
 background:#ff4d6d;
 color:white;
-padding:15px 30px;
-border-radius:30px;
+padding:15px 35px;
+border-radius:40px;
 text-decoration:none;
-font-size:18px;
-display:inline-block;
-margin-top:20px;
+font-weight:600;
+transition:0.3s;
 }
 
+.btn:hover{
+background:#e63950;
+}
+
+/* SECCIONES */
+
 .section{
-padding:60px 20px;
+padding:80px 10%;
 text-align:center;
 }
 
-.cards{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+.section h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+/* INCLUYE */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:30px;
 }
 
-.card{
-background:white;
+.feature{
 padding:20px;
-width:250px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+background:#f9f9f9;
 }
+
+/* GALERIA */
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:10px;
-padding:20px;
+gap:15px;
 }
 
 .gallery img{
 width:100%;
 height:250px;
 object-fit:cover;
-border-radius:8px;
+border-radius:10px;
 }
 
+/* PRECIOS */
+
+.price{
+background:#f8f8f8;
+padding:60px;
+border-radius:10px;
+}
+
+.price h3{
+font-size:40px;
+color:#ff4d6d;
+}
+
+/* FOOTER */
+
 footer{
-background:#222;
+background:#111;
 color:white;
-padding:30px;
+padding:40px;
 text-align:center;
 }
 
+/* BOTON WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
 </style>
+
 </head>
 
 <body>
@@ -97,43 +157,46 @@ text-align:center;
 
 <h1>Picniseria 🌹</h1>
 
-<p>Picnic romántico frente al mar en Barranco</p>
+<p>
+Sorprende a tu pareja con una experiencia romántica frente al mar en Barranco.
+Nosotros preparamos todo para que solo lleguen y disfruten el momento.
+</p>
 
-<p>Promoción especial: primeros 5 clientes S/179</p>
-
-<a class="btn" href="https://wa.me/51999999999">Reservar por WhatsApp</a>
+<a class="btn" href="https://wa.me/51999999999">Reservar ahora</a>
 
 </div>
 
 </section>
 
-<!-- SERVICIOS -->
+<!-- EXPERIENCIA -->
 
 <section class="section">
 
-<h2>¿Qué incluye el picnic?</h2>
+<h2>La experiencia Picniseria</h2>
 
-<div class="cards">
+<p>
+Creamos momentos inolvidables con picnics románticos frente al mar.
+Ideal para aniversarios, cumpleaños, pedidas de mano o una sorpresa especial.
+</p>
 
-<div class="card">
-<h3>Mesa decorativa</h3>
-<p>Mesa de madera con decoración romántica.</p>
-</div>
+</section>
 
-<div class="card">
-<h3>Cojines y manta</h3>
-<p>Zona cómoda para disfrutar frente al mar.</p>
-</div>
+<!-- QUE INCLUYE -->
 
-<div class="card">
-<h3>Letras luminosas</h3>
-<p>Decoración perfecta para fotos.</p>
-</div>
+<section class="section">
 
-<div class="card">
-<h3>Pétalos y luces</h3>
-<p>Ambiente romántico inolvidable.</p>
-</div>
+<h2>¿Qué incluye?</h2>
+
+<div class="features">
+
+<div class="feature">Mesa decorativa</div>
+<div class="feature">Cojines y manta</div>
+<div class="feature">Letras luminosas</div>
+<div class="feature">Pétalos románticos</div>
+<div class="feature">Luces LED</div>
+<div class="feature">Cartel personalizado</div>
+<div class="feature">Copas y florero</div>
+<div class="feature">Decoración romántica</div>
 
 </div>
 
@@ -143,14 +206,32 @@ text-align:center;
 
 <section class="section">
 
-<h2>Nuestros Picnics</h2>
+<h2>Nuestros picnics</h2>
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e">
 <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e">
 <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
 <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659">
+
+</div>
+
+</section>
+
+<!-- PRECIO -->
+
+<section class="section">
+
+<div class="price">
+
+<h2>Promoción lanzamiento</h2>
+
+<h3>S/179</h3>
+
+<p>Primeros 5 clientes</p>
+
+<a class="btn" href="https://wa.me/51999999999">Reservar por WhatsApp</a>
 
 </div>
 
@@ -162,11 +243,12 @@ text-align:center;
 
 <p>📍 Barranco - Lima</p>
 
-<p>Reservas por WhatsApp</p>
-
-<a class="btn" href="https://wa.me/51999999999">Reservar ahora</a>
+<p>Picniseria | Experiencias románticas</p>
 
 </footer>
 
+<a class="whatsapp" href="https://wa.me/51999999999">W</a>
+
 </body>
+
 </html>
