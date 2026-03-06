@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
@@ -9,145 +8,29 @@
 
 <title>Picniseria | Picnic romántico en Barranco</title>
 
+<link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#fff;
-color:#333;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-max-width:600px;
-margin:auto;
-}
-
-.btn{
-display:inline-block;
-margin-top:30px;
-background:#ff4d6d;
-color:white;
-padding:15px 35px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#e63950;
-}
-
-/* SECCIONES */
-
-.section{
-padding:80px 10%;
-text-align:center;
-}
-
-.section h2{
-font-size:36px;
-margin-bottom:40px;
-}
-
-/* INCLUYE */
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:30px;
-}
-
-.feature{
-padding:20px;
-border-radius:10px;
-background:#f9f9f9;
-}
-
-/* GALERIA */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:10px;
-}
-
-/* PRECIOS */
-
-.price{
-background:#f8f8f8;
-padding:60px;
-border-radius:10px;
-}
-
-.price h3{
-font-size:40px;
-color:#ff4d6d;
-}
-
-/* FOOTER */
-
-footer{
-background:#111;
-color:white;
-padding:40px;
-text-align:center;
-}
-
-/* BOTON WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-padding:15px 18px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none;
-}
-
-</style>
 
 </head>
 
 <body>
+
+<!-- MENU -->
+
+<nav class="navbar">
+
+<div class="logo">Picniseria</div>
+
+<div class="nav-links">
+<a href="#experiencia">Experiencia</a>
+<a href="#incluye">Incluye</a>
+<a href="#galeria">Galería</a>
+<a href="#precio">Precio</a>
+<a href="#reservas">Reservas</a>
+</div>
+
+</nav>
 
 <!-- HERO -->
 
@@ -170,20 +53,20 @@ Nosotros preparamos todo para que solo lleguen y disfruten el momento.
 
 <!-- EXPERIENCIA -->
 
-<section class="section">
+<section class="section" id="experiencia">
 
 <h2>La experiencia Picniseria</h2>
 
 <p>
 Creamos momentos inolvidables con picnics románticos frente al mar.
-Ideal para aniversarios, cumpleaños, pedidas de mano o una sorpresa especial.
+Ideal para aniversarios, cumpleaños o pedidas de mano.
 </p>
 
 </section>
 
 <!-- QUE INCLUYE -->
 
-<section class="section">
+<section class="section" id="incluye">
 
 <h2>¿Qué incluye?</h2>
 
@@ -204,7 +87,7 @@ Ideal para aniversarios, cumpleaños, pedidas de mano o una sorpresa especial.
 
 <!-- GALERIA -->
 
-<section class="section">
+<section class="section" id="galeria">
 
 <h2>Nuestros picnics</h2>
 
@@ -221,7 +104,7 @@ Ideal para aniversarios, cumpleaños, pedidas de mano o una sorpresa especial.
 
 <!-- PRECIO -->
 
-<section class="section">
+<section class="section" id="precio">
 
 <div class="price">
 
@@ -237,6 +120,25 @@ Ideal para aniversarios, cumpleaños, pedidas de mano o una sorpresa especial.
 
 </section>
 
+<!-- RESERVAS -->
+
+<section class="section" id="reservas">
+
+<h2>Reservas</h2>
+
+<p>Para asegurar tu fecha soñada:</p>
+
+<ul>
+<li>50% de adelanto al reservar</li>
+<li>50% restante un día antes del evento</li>
+</ul>
+
+<h3>Medios de pago</h3>
+
+<p>Yape | Plin</p>
+
+</section>
+
 <!-- FOOTER -->
 
 <footer>
@@ -244,66 +146,7 @@ Ideal para aniversarios, cumpleaños, pedidas de mano o una sorpresa especial.
 <p>📍 Barranco - Lima</p>
 
 <p>Picniseria | Experiencias románticas</p>
-<section class="section">
 
-<h2>Reservas</h2>
-
-<p>Para asegurar tu fecha soñada solo necesitas:</p>
-
-<ul style="max-width:600px;margin:auto;text-align:left">
-
-<li>50% de adelanto al momento de reservar.</li>
-<li>El 50% restante un día antes del evento.</li>
-
-</ul>
-
-<h3 style="margin-top:30px">Medios de pago</h3>
-
-<p>Yape | Plin</p>
-
-</section>
-
-<section class="section">
-
-<h2>Horarios disponibles</h2>
-
-<p>01:00 pm – 02:30 pm</p>
-<p>04:00 pm – 05:30 pm</p>
-<p>05:00 pm – 06:30 pm</p>
-
-</section>
-
-<section class="section">
-
-<h2>Tiempo extra</h2>
-
-<p>+30 minutos — S/30</p>
-<p>+60 minutos — S/50</p>
-
-</section>
-
-<section class="section">
-
-<h2>Cambios y cancelaciones</h2>
-
-<ul style="max-width:600px;margin:auto;text-align:left">
-
-<li>Una vez hecha la reserva no realizamos devoluciones.</li>
-<li>Si avisas con 24 horas de anticipación puedes reprogramar sin costo.</li>
-
-</ul>
-
-</section>
-
-<section class="section">
-
-<h2>Lugar</h2>
-
-<p>Malecón de Barranco</p>
-
-<p>Previa coordinación</p>
-
-</section>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/51999999999">W</a>
