@@ -11,24 +11,36 @@ color:#333;
 padding-top:80px;
 }
 
+
 /* NAVBAR */
 
 .navbar{
 position:fixed;
 top:0;
 width:100%;
-background:rgba(255,255,255,0.9);
-backdrop-filter:blur(10px);
+background:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:12px 8%;
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
+box-shadow:0 6px 25px rgba(0,0,0,0.08);
 z-index:1000;
 }
 
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
 .logo img{
-height:55px;
+height:50px;
+}
+
+.logo span{
+font-size:22px;
+font-weight:600;
+color:#ff4d6d;
 }
 
 .nav-links a{
@@ -43,14 +55,16 @@ transition:0.3s;
 color:#ff4d6d;
 }
 
+
 /* HERO */
 
 .hero{
-height:75vh;
 
-background-image:
-linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url("./images/picnic4.jpg");
+height:90vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url("images/picnic4.jpg");
 
 background-size:cover;
 background-position:center;
@@ -60,43 +74,62 @@ align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
+padding:20px;
 }
 
 .hero h1{
-font-size:60px;
+font-size:70px;
 margin-bottom:20px;
 }
 
 .hero p{
 font-size:22px;
-max-width:600px;
+max-width:650px;
 margin:auto;
 }
+
 
 /* BOTON */
 
 .btn{
+
 display:inline-block;
-margin-top:30px;
-background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
+
+margin-top:35px;
+
+background:linear-gradient(135deg,#ff4d6d,#ff758f);
+
 color:white;
-padding:16px 40px;
-border-radius:50px;
-text-decoration:none;
+
+padding:18px 45px;
+
+border-radius:60px;
+
+font-size:18px;
+
 font-weight:600;
-box-shadow:0 10px 30px rgba(255,77,109,0.35);
-transition:0.3s;
+
+text-decoration:none;
+
+box-shadow:0 12px 40px rgba(255,77,109,0.45);
+
+transition:all 0.35s ease;
+
 }
 
 .btn:hover{
-transform:translateY(-3px);
-box-shadow:0 14px 40px rgba(255,77,109,0.5);
+
+transform:translateY(-5px) scale(1.03);
+
+box-shadow:0 20px 50px rgba(255,77,109,0.6);
+
 }
+
 
 /* SECCIONES */
 
 .section{
-padding:90px 10%;
+padding:100px 10%;
 text-align:center;
 }
 
@@ -105,97 +138,175 @@ font-size:38px;
 margin-bottom:35px;
 }
 
+.color-section{
+background:#ffe5ec;
+}
+
+
 /* EXPERIENCIA */
 
 .experience-img{
+
 width:100%;
 max-width:800px;
+
 margin-top:40px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+
 }
+
 
 /* FEATURES */
 
 .features{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
 gap:25px;
-margin-top:30px;
+
+margin-top:40px;
+
 }
 
 .feature{
+
 background:white;
+
 padding:25px;
-border-radius:12px;
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+border-radius:14px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+transition:0.3s;
+
 }
+
+.feature:hover{
+
+transform:translateY(-5px);
+
+}
+
 
 /* GALERIA */
 
 .gallery{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-margin-top:30px;
+
+gap:30px;
+
+margin-top:40px;
+
 }
 
 .gallery img{
+
 width:100%;
-height:320px;
+
+height:340px;
+
 object-fit:cover;
-border-radius:15px;
-transition:0.4s;
-box-shadow:0 8px 25px rgba(0,0,0,0.2);
+
+border-radius:18px;
+
+transition:0.5s;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+
 }
 
 .gallery img:hover{
-transform:scale(1.08);
+
+transform:scale(1.08) rotate(1deg);
+
 }
+
 
 /* PRECIO */
 
 .price{
+
 background:white;
+
 padding:60px;
-border-radius:15px;
-box-shadow:0 8px 30px rgba(0,0,0,0.1);
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+
 max-width:500px;
+
 margin:auto;
+
 }
 
 .price h3{
-font-size:42px;
+
+font-size:45px;
+
 color:#ff4d6d;
+
 margin:10px 0;
+
 }
+
 
 /* FOOTER */
 
 footer{
+
 background:#111;
+
 color:white;
+
 padding:40px;
+
 text-align:center;
-margin-top:60px;
+
+margin-top:80px;
+
 }
+
 
 /* WHATSAPP */
 
 .whatsapp{
+
 position:fixed;
+
 bottom:25px;
+
 right:25px;
+
 background:#25D366;
+
 color:white;
-padding:18px 20px;
+
+padding:20px;
+
 border-radius:50%;
-font-size:22px;
+
+font-size:24px;
+
 text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
+box-shadow:0 6px 20px rgba(0,0,0,0.35);
+
 transition:0.3s;
+
 }
 
 .whatsapp:hover{
-transform:scale(1.1);
+
+transform:scale(1.15);
+
 }
